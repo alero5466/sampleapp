@@ -10,22 +10,23 @@
 
     <div class="container">
         <header>
-            <h1>Welcome to Your Web App!</h1>
+            <h1>Login to Your Web App</h1>
             <p class="subtitle">Powered by Node.js and Express</p>
         </header>
 
         <main>
-            <p>This is a simple, elegant starting point. You can modify the content by editing:</p>
-            <ul>
-                <li><strong>HTML:</strong> <code>public/index.html</code></li>
-                <li><strong>Styling:</strong> <code>public/css/style.css</code></li>
-                <li><strong>Logic:</strong> <code>public/js/main.js</code></li>
-            </ul>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
         </main>
-
-        <footer>
-            <button id="interactive-button">Click for a message!</button>
-        </footer>
     </div>
 
     <script src="/js/main.js"></script>
